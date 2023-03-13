@@ -1,0 +1,28 @@
+### Get countries
+GET http://localhost:3000/api/countries
+
+### Get countries By Id
+GET http://localhost:3000/api/countries/NL
+
+### Add countries
+POST http://localhost:3000/api/countries/
+Content-Type: application/json
+
+{
+    "country_id" : "Mr",
+    "country_name" : "Myanmar",
+    "region_id" : 3
+}
+
+### Update countries
+PUT http://localhost:3000/api/countries/Mr
+Content-Type: application/json
+
+{
+    "country_id" : "MR",
+    "country_name" : "Myanmar",
+    "region_id" : 3
+}
+
+### Delete countries
+DELETE http://localhost:3000/api/countries/MR

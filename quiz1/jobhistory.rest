@@ -1,0 +1,31 @@
+### Get job history
+GET http://localhost:3000/api/jobhistory
+
+### Get job history By Id
+GET http://localhost:3000/api/jobhistory/202
+
+### Add job history
+POST http://localhost:3000/api/jobhistory
+Content-Type: application/json
+
+{
+    "employee_id" : 202,
+    "start_date" : "2023-02-02T17:00:00.000Z",
+    "end_date" : "2006-09-18T17:00:00.000Z",
+    "job_id" : "ST_CLERK",
+    "department_id" : 50
+}
+
+### Update job history
+PUT http://localhost:3000/api/jobhistory/202
+Content-Type: application/json
+
+{
+    "start_date" : "2002-02-02T17:00:00.000Z",
+    "end_date" : "2019-09-18T17:00:00.000Z",
+    "job_id" : "ST_CLERK",
+    "department_id" : 50
+}
+
+### Delete job history
+DELETE http://localhost:3000/api/jobhistory/202

@@ -1,0 +1,29 @@
+### Get jobs
+GET http://localhost:3000/api/jobs
+
+### Get jobs By Id
+GET http://localhost:3000/api/job/MK_PRES
+
+### Add jobs
+POST http://localhost:3000/api/job
+Content-Type: application/json
+
+{
+    "job_id" : "MK_PRES",
+    "job_title" : "IT Admin",
+    "min_salary" : 40050,
+    "max_salary" : 14000
+}
+
+### Update jobs
+PUT http://localhost:3000/api/job/MK_PRES
+Content-Type: application/json
+
+{
+    "job_title" : "IT Administrator",
+    "min_salary" : 45000,
+    "max_salary" : 14500
+}
+
+### Delete jobs
+DELETE http://localhost:3000/api/job/MK_PRES

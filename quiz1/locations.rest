@@ -1,0 +1,33 @@
+### Get locations
+GET http://localhost:3000/api/locations
+
+### Get location By Id
+GET http://localhost:3000/api/location/3300
+
+### Add location
+POST http://localhost:3000/api/location
+Content-Type: application/json
+
+{
+    "location_id" : 3300,
+    "street_address" : "Tebet",
+    "postal_code" : "12870JKT",
+    "city" : "Jakarta City",
+    "state_province" : "South Jakarta",
+    "country_id" : "ID"
+}
+
+### Update location
+PUT http://localhost:3000/api/location/3300
+Content-Type: application/json
+
+{
+    "street_address" : "Kec Tebet",
+    "postal_code" : "JKT12870",
+    "city" : "Jakarta",
+    "state_province" : "South Jakarta",
+    "country_id" : "ID"
+}
+
+### Delete location
+DELETE http://localhost:3000/api/location/3300

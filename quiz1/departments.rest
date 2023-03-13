@@ -1,0 +1,30 @@
+### Get departments
+GET http://localhost:3000/api/departments
+
+### Get department By Id
+GET http://localhost:3000/api/department/30
+
+### Add department
+POST http://localhost:3000/api/department
+Content-Type: application/json
+
+{
+    "department_id" : 280,
+    "department_name" : "Operational",
+    "manager_id" : null,
+    "location_id" : 1700
+}
+
+### Update department
+PUT http://localhost:3000/api/department/290
+Content-Type: application/json
+
+{
+    "department_id" : 280,
+    "department_name" : "IT Operational",
+    "manager_id" : null,
+    "location_id" : 1700
+}
+
+### Delete department
+DELETE http://localhost:3000/api/department/280
