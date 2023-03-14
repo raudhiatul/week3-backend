@@ -2,17 +2,17 @@
 GET http://localhost:3000/api/employees
 
 ### Get department By Id
-GET http://localhost:3000/api/employee/2
+GET http://localhost:3000/api/employee/4
 
 ### Add department
 POST http://localhost:3000/api/employee
 Content-Type: application/json
 
 {
-    "first_name" : "Agus",
-    "last_name" : "Setiawan",
-    "email" : "AGUS",
-    "phone_number" : "087885159098",
+    "first_name" : "Raudhiatul",
+    "last_name" : "Ridwan",
+    "email" : "raul",
+    "phone_number" : "08123456798",
     "hire_date" : "2020-03-12T13:00:00.000Z",
     "salary" : "16000",
     "commission_pct" : "0.1",
@@ -22,13 +22,13 @@ Content-Type: application/json
 }
 
 ### Update department
-PUT http://localhost:3000/api/employee/2
+PUT http://localhost:3000/api/employee/4
 Content-Type: application/json
 
 {
-    "first_name" : "AgusS",
-    "last_name" : "Setiawans",
-    "email" : "AGUSS",
+    "first_name" : "Raudhiatul",
+    "last_name" : "Ridwan",
+    "email" : "raudhiatul",
     "phone_number" : "0878xxxxxxx",
     "hire_date" : "2022-03-12T13:00:00.000Z",
     "salary" : "18000",
@@ -39,4 +39,4 @@ Content-Type: application/json
 }
 
 ### Delete department
-DELETE http://localhost:3000/api/employee/2
+DELETE http://localhost:3000/api/employee/3
